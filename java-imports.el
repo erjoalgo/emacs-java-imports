@@ -4,6 +4,7 @@
 
 ;; Author: Lee Hinman <lee@writequit.org>
 ;; URL: http://www.github.com/dakrone/emacs-java-imports
+;; Package-Version: 20170906.22:24
 ;; Version: 0.1.1
 ;; Keywords: java
 ;; Package-Requires: ((emacs "24.4") (s "1.10.0") (pcache "0.3.2"))
@@ -278,7 +279,7 @@ package and cache it for future statements."
 ;;;###autoload
 (defun java-imports-scan-local-jars (&optional local-repo)
   (interactive)
-  "scan the local repository, find local jars and add them to the cache.
+  "Scan the local repository, find local jars and add them to the cache.
 if a class is found in multiple packages, any such package may be registered
 for that class in the cache.
 This is currently a synchronous and potentially slow operation, but
